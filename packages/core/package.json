@@ -1,0 +1,48 @@
+{
+  "name": "@ester/core",
+  "version": "0.0.0",
+  "description": "Core da Ester CLI",
+  "author": "helberfernandes2000@gmail.com",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/core.js",
+  "typings": "dist/core.d.ts",
+  "bin": {
+    "ester": "dist/core.js"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "tests"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cli",
+    "development",
+    "terminal",
+    "command-line",
+    "console",
+    "shell",
+    "TypeScript"
+  ],
+  "scripts": {
+    "uninstall": "npm uninstall -g @ester/core",
+    "build": "npx tsc",
+    "dev": "ts-node src/core.ts",
+    "start": "ts-node src/core.ts",
+    "test": "lerna run build --scope @ester/core && jest",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,json}' --config ./.prettierrc"
+  },
+  "dependencies": {
+    "@ester/types": "^0.0.0",
+    "@ester/plugin-manager": "^0.0.0",
+    "@inquirer/prompts": "^4.3.1",
+    "cli-table": "^0.3.11",
+    "commander": "^12.0.0",
+    "figlet": "^1.7.0"
+  }
+}

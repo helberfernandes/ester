@@ -1,0 +1,40 @@
+{
+  "name": "@ester/plugin-manager",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "helberfernandes2000@gmail.com",
+  "homepage": "",
+  "license": "MIT",
+  "main": "dist/plugin-manager.js",
+  "types": "dist/plugin-manager.d.ts",
+  "directories": {
+    "lib": "src",
+    "test": "tests"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "cli",
+    "development",
+    "terminal",
+    "command-line",
+    "console",
+    "shell",
+    "TypeScript"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "test": "lerna run build --scope @ester/plugin-manager && jest",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,json}' --config ./.prettierrc"
+  },
+  "dependencies": {
+    "@ester/types": "^0.0.0",
+    "commander": "^12.0.0",
+    "require-module": "^0.1.0"
+  },
+  "devDependencies": {}
+}
