@@ -1,6 +1,6 @@
 {
   "name": "@ester/core",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Core da Ester CLI",
   "author": "helberfernandes2000@gmail.com",
   "homepage": "",
@@ -38,8 +38,8 @@
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,json}' --config ./.prettierrc"
   },
   "dependencies": {
-    "@ester/types": "^0.0.0",
-    "@ester/plugin-manager": "^0.0.0",
+    "@ester/plugin-manager": "^0.1.0",
+    "@ester/types": "^0.1.0",
     "@inquirer/prompts": "^4.3.1",
     "cli-table": "^0.3.11",
     "commander": "^12.0.0",
